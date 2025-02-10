@@ -18,7 +18,9 @@ public class UserController {
 
     @PostMapping
     public User addUser(@RequestBody User user) {
+    	 System.out.println("Saved Successfully");
         return userRepository.save(user);
+       
     }
 
     @GetMapping
